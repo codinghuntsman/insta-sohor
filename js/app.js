@@ -1,5 +1,11 @@
-let posts = [];
+const loadPosts = async () => {
+  let data = await fetch('../data/posts.json');
+  posts = await data.json();
+  showPosts(posts);
+}
+loadPosts();
 
+let posts = [];
 const likedPostsId = [];
 const reportedPostsId = [];
 
@@ -18,6 +24,7 @@ const isLiked = (id) => {
 const addToLiked = (id) => {
   // console.log(id)
   likedPostsId.push(id); //Problem 1 Done
+  // console.log(likedPostsId)
   showPosts(posts);
 };
 
@@ -151,13 +158,7 @@ const displayReportedPosts = () => {
   reportedPosts.forEach((post) => {
     const div = createPost(post);
     document.getElementById("reported").appendChild(div);
+    document.getElementById("question-section").innerHTML = '';
   });
 };
 
-const loadPosts = async () => {
-  let data = await fetch('../data/posts.json');
-  posts = await data.json();
-  showPosts(posts);
-}
-
-loadPosts();
