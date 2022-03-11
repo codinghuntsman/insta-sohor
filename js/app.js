@@ -89,7 +89,6 @@ const createPost = (post) => {
                   <button class="post__button">
                     <i class="fa-solid fa-comment"></i>
                   </button>
-                  
 
                   <div class="post__indicators"></div>
 
