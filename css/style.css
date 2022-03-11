@@ -256,6 +256,7 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/*--------- Q&A section -----------*/
 .Q1{
   text-align: center;
   margin-top: 50px;
