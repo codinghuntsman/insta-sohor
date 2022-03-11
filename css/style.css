@@ -256,3 +256,19 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.Q1{
+  text-align: center;
+  margin-top: 50px;
+}
+.QA{
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+  font-weight: bold;
+}
+.QA2{
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+  font-weight: bold;
+}
